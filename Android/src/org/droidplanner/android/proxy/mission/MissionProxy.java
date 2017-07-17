@@ -59,7 +59,8 @@ public class MissionProxy implements DPMap.PathSource {
     private static final int UNDO_BUFFER_SIZE = 30;
 
     private static final IntentFilter eventFilter = new IntentFilter();
-
+    
+    // static initializer block will be called on loading of the class.
     static {
         eventFilter.addAction(AttributeEvent.MISSION_DRONIE_CREATED);
         eventFilter.addAction(AttributeEvent.MISSION_UPDATED);
